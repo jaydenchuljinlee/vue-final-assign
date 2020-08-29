@@ -1,0 +1,133 @@
+.perf_status_view {
+  /*수정*/
+  position: relative;
+  float: left;
+  padding: 2.5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .box {
+    position: absolute;
+    cursor: pointer;
+    width: calc(100% - 4px);
+    height: calc(100% - 6px);
+    left: 2px;
+    top: 2px;
+    min-height: 90px;
+
+    .content {
+      width: 100px;
+      height: 52px;
+      position: absolute;
+      text-align: center;
+      margin: 2 0 0 0;
+      padding: 0;
+      left: calc(50% - 50px);
+      top: calc(50% - 22px);
+
+      p.num {
+        /*수정*/
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'NanumGothic', sans-serif;
+        height: 30px;
+        line-height: 30px;
+        display: inherit;
+        margin: 0px;
+        padding-top: 0px !important;
+      }
+
+      .label {
+        /*수정*/
+        font-size: 13px;
+        font-family: 'NanumGothic', sans-serif;
+        line-height: 14px;
+        height: 14px;
+        margin-top: 3px;
+        font-weight: 600;
+        color: #6c7278;
+      }
+    }
+
+    &.abnormal {
+      background-color: #fff6f6;
+      border: solid 1px #eecccc;
+      border-top: none;
+      box-shadow: inset 0px 4px 0 #d65154;
+
+      .content {
+        p.num {
+          color: #514542;
+        }
+        .label {
+          color: #7a7a7a;
+        }
+      }
+
+      &:hover, &.selected {
+        background-color: #fef1f1;
+        border: solid 1px #c60101;
+        border-bottom: solid 1px #dc8293;
+        border-top: none;
+        box-shadow: inset 0px 4px 0 #c60101, 0 1px 0 #e5e5e5;
+
+        .content {
+          p.num {
+            color: #000;
+          }
+          .label {
+            color: #d0001d;
+          }
+        }
+      }
+    }
+
+    &.normal {
+      background-color: #f4f9fe;
+      border: solid 1px #d3d7e3;
+      border-top: none;
+      box-shadow: inset 0px 4px 0 #618cc5;
+
+      .content {
+        p.num {
+          color: #444e5d;
+        }
+        .label {
+          color: #6c7278;
+        }
+      }
+
+      &:hover, &.selected {
+        background-color: #f0f6ff;
+        border: solid 1px #3764a8;
+        border-bottom: solid 1px #4070b8;
+        border-top: none;
+        box-shadow: inset 0px 4px 0 #3764a8, 0 1px 0 #e5e5e5;
+
+        .content {
+          p.num {
+            color: #000;
+          }
+          .label {
+            color: #244f90;
+          }
+        }
+      }
+    }
+  }
+}
+
+.state-normal {
+  color: $normal;
+}
+.state-abnormal {
+  color: $abnormal;
+}
+.state-none {
+  color: #b4b7c3;
+}
+
+.favorite {
+  color: #e6a23c;
+}
