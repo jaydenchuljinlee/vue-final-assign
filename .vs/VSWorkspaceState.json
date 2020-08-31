@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
     "\\src",
     "\\src\\store",
     "\\src\\views",
@@ -9,6 +10,6 @@
     "\\src\\views\\performance",
     "\\src\\views\\settings"
   ],
-  "SelectedNode": "\\src\\store\\store.js",
+  "SelectedNode": "\\config\\index.js",
   "PreviewInSolutionExplorer": false
 }

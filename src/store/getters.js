@@ -9,6 +9,10 @@ const getters =
   getLinks(state) {
     return state.links;
   },
+  // 현재 등록된 트리 요소들을 가져옴
+  getTreeData(state) {
+    return state.treeData;
+  },
 };
 
 export default getters;
